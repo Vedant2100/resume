@@ -1,0 +1,279 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[normalem]{ulem} % put this in the preamble
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\education}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{Vedant Borkute}} \\[6pt]
+    \small
+    \raisebox{-0.1\height}\faPhone\ +1 951-823-2856 \quad
+    \href{mailto:2711vedant@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \uline{2711vedant@gmail.com}} \quad
+    \href{mailto:vbork001@ucr.edu}{\raisebox{-0.2\height}\faGlobe\ \uline{vbork001@ucr.edu}} \quad
+    \href{https://github.com/Vedant2100}{\raisebox{-0.2\height}\faGithub\ \uline{Vedant2100}} \quad
+    \href{https://www.linkedin.com/in/vedant-b-1290a51a6/}{\raisebox{-0.2\height}\faLinkedin\ \uline{vedant-borkute}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{University of California, Riverside} & \textbf{Sep 2025 -- Mar 2027} \\
+  \textit{Master of Science, Computer Science} & Riverside, California \\
+\end{tabular*}
+
+\vspace{6pt}
+
+\noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+  \textbf{Indian Institute of Technology, Bombay} & \textbf{Aug 2019 -- Apr 2023} \\
+  \textit{Bachelor of Technology, Computer Science} & Mumbai, Maharashtra, India \\
+\end{tabular*}
+\vspace{-5pt}
+\vspace{-10pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\textbf{Data Scientist} - \textit{Finarb.ai}\hfill \textbf{Aug 2023 - Aug 2025}\\
+
+\vspace{-5pt}
+\resumeItemListStart
+\resumeItem{Implemented and benchmarked statistical forecasting models (SARIMA, VAR, Facebook Prophet) and deep learning approaches (LSTMs, Temporal Convolutional Networks) for different nodes in a pharmaceuticals' supply chain, achieving a \textbf{90\% reduction in Mean Absolute Percentage Error} over already present approaches (3MA, 6MA, SES).}
+\vspace{-3pt}
+\resumeItem{Performed comprehensive time-series diagnostics using \textbf{Autocorrelation plots, extended autocorrelation matrices}, stationarity tests (mean, variance), and residual analysis; engineered \textbf{lagged and augmented data using exogenous features} (e.g., mortality rates, inventory, veteran population) to enhance model predictive power.}
+\vspace{-3pt}
+\resumeItem{Developed an \textbf{end-to-end forecasting pipeline} encompassing data preprocessing, feature engineering, model selection with custom metrics, and docker-based containerization for reproducible deployment.}
+    \vspace{-3pt}
+    \resumeItem{Built AI Agents: 
+    \vspace{-3pt}
+      \begin{itemize}[leftmargin=*,label=--,noitemsep,nolistsep]
+        \item \textbf{Feature Engineering:} Generation of domain-relevant features via retrieval-augmented generation on internet-based and other sources, improving model performance by 5\%..
+        \item \textbf{Cross-Database Queries:} Enabling natural language queries spanning multiple databases/datasources with a SQL and Python code generation agentic workflow.
+        \item \textbf{Business Dashboards:} Automated creation of dashboards with key performance indicators and intuitive visualizations.
+      \end{itemize}
+    }
+    \vspace{-3pt}
+\resumeItem{Performed data preparation and analysis for various business usecases (inventory-order and order-pricing correlations, supply assessment, purchasing patterns) using optimized \textbf{SQL scripts}, and developed comprehensive \textbf{Power BI dashboards} for share gain attribution, portfolio performance, competitor dynamics, BCG-style prioritization, and annual revenue/volume summaries for leadership insights.}
+  \resumeItemListEnd
+\vspace{-5pt}
+\vspace{-5pt}
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-8pt}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{Online Competing and Development Environment} \textit{-- Advisor: Prof. Amitabha Sanyal}}{Autumn 2020}
+      \resumeItemListStart
+        \resumeItem{Built and deployed a browser-based virtual Linux environment for cross-platform code compilation with Django backend and Bootstrap frontend.}
+        % \resumeItem{Developed a \textbf{Django backend} supporting user accounts and storage of up to 10 files with directory structure; designed the frontend using \textbf{Bootstrap}.}
+        % \resumeItem{Added support for multiple programming languages (C++, Java, Python) with standard library support.}
+        \resumeItem{Added support for multiple languages (C++, Java, Python) and implemented timed online competitions with automated grading.}
+      \resumeItemListEnd
+\vspace{-15pt}
+  \resumeProjectHeading
+      {\textbf{Restaurant Management System} \textit{-- Advisor: Prof. S. Sudarshan}}{Spring 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack React–Node.js web app with REST APIs to manage reservations, menu, orders, and billing.}
+        % \resumeItem{Developed a \textbf{Django backend} supporting user accounts and storage of up to 10 files with directory structure; designed the frontend using \textbf{Bootstrap}.}
+        % \resumeItem{Added support for multiple programming languages (C++, Java, Python) with standard library support.}
+        \resumeItem{Created role-based dashboards and analytics tools for real-time restaurant operations and business insights.}
+      \resumeItemListEnd
+\vspace{-15pt}
+  \resumeProjectHeading
+      {\textbf{Movie Recommendation System} \textit{-- Advisor: Prof. Abir De}}{Autumn 2022}
+      \resumeItemListStart
+        \resumeItem{Built a hybrid recommender using collaborative and content-based filtering with deep autoencoders (PyTorch).}
+        % \resumeItem{Developed a \textbf{Django backend} supporting user accounts and storage of up to 10 files with directory structure; designed the frontend using \textbf{Bootstrap}.}
+        % \resumeItem{Added support for multiple programming languages (C++, Java, Python) with standard library support.}
+        \resumeItem{Engineered user–movie features to improve RMSE through multi-layer neural network tuning.}
+      \resumeItemListEnd
+\vspace{-15pt}
+  % \resumeProjectHeading
+  %     {\textbf{Custom Linux Shell and xv6 Extensions} \textit{-- Advisor: Prof. Amitabha Sanyal}}{Autumn 2020}
+  %     \resumeItemListStart
+  %       \resumeItem{Developed a C++ shell supporting serial, parallel, and background process execution with custom signal handling.}
+  %       % \resumeItem{Developed a \textbf{Django backend} supporting user accounts and storage of up to 10 files with directory structure; designed the frontend using \textbf{Bootstrap}.}
+  %       % \resumeItem{Added support for multiple programming languages (C++, Java, Python) with standard library support.}
+  %       \resumeItem{Modified xv6 kernel to implement custom versions of fork, wait, and exec system calls.}
+  %     \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-2pt}
+% \vspace{-10pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}
+    [leftmargin=0.15in, label={}]
+    \small{\item{{\textbf{Languages:} C++, R, JavaScript, Python, Bash, Prolog, AWK, MIPS, Neo4J CQL, SQL, Sed, Lex, Yacc, \LaTeX}}}
+    \vspace{-5pt}\small{\item{{\textbf{Technologies:} Pandas, R, SQL, Power BI, NumPy, SciPy, MATLAB, PostgreSQL, React, Django, PyTorch, TensorFlow, MongoDB}}}
+    \vspace{-5pt}\small{\item{\textbf{Software:} Microsoft Excel, RStudio, DataGrip, Cursor, Docker, Git, PowerPoint, Word, Slack, Azure DevOps, Jira, Confluence}}
+\resumeItemListEnd
+ % \vspace{-12pt}
+\vspace{-5pt}
+\vspace{-10pt}
+%-----------ACCOMPLISHMENTS-----------
+\section*{Accomplishments}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small {\item Ranked 1 in OBC-PwD in IIT-JEE Advanced 2019, India's most competitive exam, and among the top 0.8\% nationwide in JEE Main among 1.3 million candidates.}
+    % \item Received Late Kalpana Chawla Best Student award’ by Shivaji Science Junior College for
+% throughout Higher Secondary Education. \hfill \textit{2017-19}
+%     \item Secured International Rank 160 in International Mathematics Olympiad conducted by the Science Olympiad Foundation \hfill \textit{2015}
+%     \item Secured 10.0 CGPA and 98.20\% in AISSE examination conducted by the Central Board of Secondary Education \hfill \textit{2017}
+\end{itemize}
+\end{document}
+
+
+
+
+% \subsection*{Custom Linux Shell and Feature Extension of xv6 (Autumn 2021)} \hfill\\
+% \textbf{Guide:} Prof. Mythili Vutukuru IIT Bombay \\
+% • Built a shell in C++ capable of serial, parallel background execution of single or multiple Unix commands \\
+% • Created custom signal handler to enable controlled termination of foreground processes or the shell itself \\
+% • Examined xv6 source code and implemented a variant of fork system call and simple version of wait, exec system calls.
+
+% \subsection*{Image Segmentation (Autumn 2020)} \hfill\\
+% \textbf{Guide:} Prof. Amitabha Sanyal IIT Bombay \\
+% • Used K-means++ algorithm and Python SciPy Library to smoothen sharp contrast images. \\
+% • Utilized NumPy, Pandas, SciPy libraries of Python to store pixels of images in matrix form. \\
+% • Used K-means algorithm to find centroid and replaced pixels by its centroid for image segmentation.
+
+% \subsection*{COVID-19 Pandemic Predictions (Autumn 2020)} \hfill\\
+% \textbf{Guide:} Prof. Amitabha Sanyal IIT Bombay \\
+% • Applied Levitt’s H(t) on Indian COVID-19 death’s data read from a CSV file Using Pandas \\
+% • Plotted a scatter plot of data using Matplotlib to visualize the behavior of Levitt’s H(t) Metric \\
+% • Predicted the end of a pandemic using the Linear fit plot of data points by implementing Linear regression from Scipy module 
+% • The linear extraplotation-based prediction is fairly effective, at least when values of H(t) are small.
+
+% \subsection*{Morphism (Autumn 2020)} \hfill\\
+% \textbf{Guide:} Prof. Ajit A Diwan IIT Bombay \\
+% • Learned about Fibonacci sequence , thue-morse sequence and properties of their morphism. \\
+% • Taking properties of morphism implemented functions to find the longest common sub-sequences and substring with help of Dynamic Programming and Knuth-Morris-Pratt algorithm.
+
+% \subsection*{Movie Recommendation System (Autumn 2022)} \hfill\\
+% \textbf{Guide:} Prof. Abir De IIT Bombay \\
+% • Analyzed a set of users with their previous ratings for a set of movies and then predict the rating they will assign to a movie they have not previously rated. Learned about Content-based and Collaborative filtering.
+
+    
+% \vspace{-15pt}
+% \section{Publications}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{P. Bhattacharya, K. Hiware, S. Rajgaria, \textbf{N. Pochhi}, K. Ghosh, S. Ghosh. \href{https://link.springer.com/chapter/10.1007/978-3-030-15712-8_27}{A Comparative Study of Summarization Algorithms applied to Legal Case Judgments}. In \emph{European Conference on Information Retrieval, 2019}
+%     }}
+%  \end{itemize}
+%  \vspace{-12pt}
