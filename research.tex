@@ -1,39 +1,46 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \input{shared/style.tex}
 \input{shared/content.tex}
 \begin{document}
 \resumeheader
-\section*{Education}
+\section{Education}
 \resumeeducation
-\section*{Experience}
-\resumerole{Research Intern}{CompFly AI, San Francisco, CA}{Jun 2026 -- Sep 2026}
+\section{Experience}
+\resumerole{Research Intern}{CompFly AI}{San Francisco, CA}{Jun 2026 -- Sep 2026}
 \begin{resumeitems}
-  \item \compBenchmark
-  \item \compDetector
-  \item \compTracing
+ \item \compBenchmark
+ \item \compDetector
+ \item \compTracing
 \end{resumeitems}
-\resumerole{Data Scientist}{Finarb AI, Kolkata, India}{Aug 2023 -- Aug 2025}
+\resumerole{Data Scientist}{Finarb AI}{Kolkata, India}{Aug 2023 -- Aug 2025}
 \begin{resumeitems}
-  \item \finModels
-  \item \finPipeline
+ \item \finModels
+ \item \finPipeline
 \end{resumeitems}
-\section*{Selected Research}
-\resumeproject{Shared Experience for Coding Agents}{2026 -- ongoing}
+\section{Selected Research \& Projects}
+\resumeproject{LLM Navigation \& Reasoning --- UCR, Prof. Yinglun Zhu}{Spring 2026}
 \begin{resumeitems}
-  \item \memoryResearch
+ \item \navResearch\ \navOutcome
+ \item \navImplementation
 \end{resumeitems}
-\resumeproject{LLM Reasoning Strategies for Navigation --- UCR, Prof. Yinglun Zhu}{Spring 2026}
+\resumeproject{\href{https://vedant2100.github.io/concept-erasure-analysis/}{Diffusion-Model Concept Erasure \& Robustness}}{Spring 2026}
 \begin{resumeitems}
-  \item \navResearch
-  \item \navImplementation
-  \item \navOutcome
+ \item \conceptErasure\ \conceptResult
 \end{resumeitems}
-\resumeproject{Concept Erasure in Diffusion Models --- UCR team project}{Spring 2026}
+\resumeproject{\href{https://github.com/Vedant2100/agent-fleet-memory-governance}{Coding-Agent Experience Sharing \& Memory Evaluation}}{2026 -- ongoing}
 \begin{resumeitems}
-  \item \conceptErasure\ \href{https://vedant2100.github.io/concept-erasure-analysis/}{(technical write-up)}
+ \item \memoryResearch
 \end{resumeitems}
-\section*{Technical Skills}
-\resumeskill{Programming}{Python, C++, SQL, Bash}
-\resumeskill{ML / research}{PyTorch, Hugging Face Transformers, NumPy, Pandas, model evaluation, RL / LLM agents, computer vision}
-\resumeskill{Infrastructure}{Linux, Git, Docker, OpenTelemetry, PostgreSQL}
+\resumeproject{\href{https://github.com/Vedant2100/image-realiser}{Deepfake Detection \& Adversarial Purification}}{2026}
+\begin{resumeitems}
+ \item \deepfakePurifier
+\end{resumeitems}
+\resumeproject{\href{https://github.com/Vedant2100/CS229_HW1_EC_Report}{LLM Reasoning Robustness \& Post-Training Experiments}}{2026}
+\begin{resumeitems}
+ \item \reasoningRobustness
+\end{resumeitems}
+\section{Technical Skills}
+\resumeskill{Languages}{Python, C++, SQL, Bash}
+\resumeskill{Modeling \& evaluation}{PyTorch, Hugging Face Transformers, NumPy, Pandas, RL/LLM agents, evaluation harnesses, computer vision}
+\resumeskill{Systems}{Linux, Git, Docker, OpenTelemetry, PostgreSQL}
 \end{document}
