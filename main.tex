@@ -104,7 +104,7 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
@@ -137,7 +137,7 @@
 %-----------EDUCATION-----------
 \section{Education}
 \noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
-  \textbf{University of California, Riverside} & \textbf{Sep 2025 -- Mar 2027} \\
+  \textbf{University of California, Riverside} & \textbf{Sep 2025 -- Dec 2026} \\
   \textit{MS in Computer Science} & Riverside, California \\
 \end{tabular*}
 
@@ -152,13 +152,15 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
 \noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
-  \textbf{Research Intern} & \textbf{Jun 2026 - Present} \\
+  \textbf{Research Intern} & \textbf{Jun 2026 -- Sep 2026} \\
   \textit{CompFly AI} & \textit{San Francisco, CA} \\
 \end{tabular*}\vspace{-7pt}
 \resumeItemListStart
-\resumeItem{Engineered \textbf{agentic observability} for the agent-monitoring platform: a nested \textbf{OpenTelemetry} span tree tracing each agent's full causal trajectory, including agent turns, tool calls, and sub-agent handoffs with token-level cost, normalized across leading AI and agent frameworks.}
+\resumeItem{Designed and built a reproducible benchmark harness for CompFly AI's \textbf{governance controls}, spanning AgentDojo prompt-injection attacks and ToolEmu high-stakes tool-use scenarios; operationalized expected-achievement criteria as action controls.}
 \vspace{-3pt}
-\resumeItem{Extending platform governance beyond RAG retrieval and tool-call policy enforcement to a new \textbf{memory-governance} layer with controls and audit over agent memory reads/writes to mitigate context poisoning and cross-session data leakage.}
+\resumeItem{Optimized a prompt-injection detection pipeline by benchmarking lightweight \textbf{transformer-based sequence classifiers}; tuned chunking, window/stride settings, heuristic rules, and parallel OR ensembles, then published findings in a technical blog.}
+\vspace{-3pt}
+\resumeItem{Extended and maintained \textbf{OpenTelemetry} instrumentation across agent orchestration, LLM inference, and tool-execution paths, enabling trace-level analysis of agent turns, tool calls, sub-agent handoffs, token usage, and cost.}
 \resumeItemListEnd
 \vspace{2pt}
 \noindent\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
@@ -169,8 +171,6 @@
 \vspace{-5pt}
 \resumeItemListStart
 \resumeItem{Implemented and benchmarked statistical models (SARIMA, VAR, Facebook Prophet) and deep learning models (LSTMs, Temporal Convolutional Networks) for pharmaceutical supply chain demand forecasting, achieving a \textbf{90\% reduction in Mean Absolute Percentage Error} over already present approaches (3MA, 6MA, SES).}
-\vspace{-3pt}
-\resumeItem{Performed comprehensive time-series diagnostics using Autocorrelation plots \& extended autocorrelation matrices, stationarity tests (mean, variance), and residual analysis; engineered lagged and augmented data using exogenous features (e.g., mortality rates, inventory, veteran population) to enhance model predictive power.}
 \vspace{-3pt}
 \resumeItem{Developed an \textbf{end-to-end forecasting pipeline} encompassing data preprocessing, feature engineering, model selection with custom metrics, and Docker-based containerization for reproducible deployment across supply chain nodes.}
     \vspace{-3pt}
@@ -186,10 +186,10 @@
 \vspace{-5pt}
 %-----------PROJECTS-----------
 \section{Projects}
-\vspace{-8pt}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-      {\textbf{AI for Navigation: Comparative Study of LLM Reasoning Strategies} \textit{-- Advisor: Prof. Yinglun Zhu}}{Spring 2026}
+      {\textbf{AI for Navigation: Comparative Study of LLM Reasoning Strategies}}{Spring 2026}
+      \par\vspace{-6pt}{\small\textit{Advisor: Prof. Yinglun Zhu}}\par\vspace{-5pt}
       \resumeItemListStart
         \resumeItem{Co-authored a controlled study comparing five LLM agent strategies (Reactive, ReAct, Chain-of-Thought, Tree-of-Thought, Buffer-of-Thought) for sequential decision-making in MiniGrid navigation tasks.}
         \resumeItem{Designed a unified evaluation pipeline in Python around Qwen2.5-7B-Instruct with deterministic settings (20 episodes/environment, max 100 steps), and tracked success rate, exploration steps, and token usage.}
@@ -211,9 +211,9 @@
 \vspace{-5pt}
 \vspace{-10pt}
 %-----------ACCOMPLISHMENTS-----------
-\section*{Accomplishments}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small {\item Ranked 1 in OBC-PwD in IIT-JEE Advanced 2019, India's most competitive exam, and among the top 0.8\% nationwide in JEE Main among 1.3 million candidates.}
+% \section*{Accomplishments}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+% \small {\item Ranked 1 in OBC-PwD in IIT-JEE Advanced 2019, India's most competitive exam, and among the top 0.8\% nationwide in JEE Main among 1.3 million candidates.}
     % \item Received Late Kalpana Chawla Best Student award’ by Shivaji Science Junior College for
 % throughout Higher Secondary Education. \hfill \textit{2017-19}
 %     \item Secured International Rank 160 in International Mathematics Olympiad conducted by the Science Olympiad Foundation \hfill \textit{2015}
