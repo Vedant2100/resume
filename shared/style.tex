@@ -1,0 +1,37 @@
+% Shared, ATS-conscious single-column resume styling.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=0.67in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\urlstyle{same}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}[\vspace{-4pt}\hrule]
+\titlespacing*{\section}{0pt}{8pt}{6pt}
+\newenvironment{resumeitems}{\begin{itemize}[leftmargin=1.12em,topsep=1.5pt,itemsep=1.5pt,parsep=0pt,partopsep=0pt]}{\end{itemize}\vspace{2pt}}
+\newcommand{\resumeheader}{%
+  {\centering\LARGE\bfseries Vedant Borkute\par}%
+  \vspace{4pt}%
+  {\centering\small
+    \href{mailto:2711vedant@gmail.com}{2711vedant@gmail.com} \quad
+    +1 951-823-2856 \quad
+    \href{https://github.com/Vedant2100}{github.com/Vedant2100}\par
+    \href{https://www.linkedin.com/in/vedant-b-1290a51a6/}{linkedin.com/in/vedant-b-1290a51a6/} \quad
+    \href{https://vedant2100.github.io/}{vedant2100.github.io}\par}%
+}
+\newcommand{\resumeeducation}{%
+  \textbf{University of California, Riverside} --- M.S. Computer Science (expected Dec 2026)\par
+  \textbf{Indian Institute of Technology Bombay} --- B.Tech. Computer Science (Apr 2023)\par
+}
+\newcommand{\resumerole}[3]{\textbf{#1} --- \textit{#2} \hfill {\small #3}\par}
+\newcommand{\resumeproject}[2]{\textbf{#1} \hfill {\small #2}\par}
+\newcommand{\resumeskill}[2]{\textbf{#1:} #2\par}
